@@ -1,0 +1,8 @@
+D:\wyf\AmcMtpService\AmcMtpService\obj\Debug\AmcMtpService.ProjectInstaller.resources
+D:\wyf\AmcMtpService\AmcMtpService\obj\Debug\AmcMtpService.csproj.GenerateResource.Cache
+D:\wyf\AmcMtpService\AmcMtpService\bin\Debug\AmcMtpService.exe.config
+D:\wyf\AmcMtpService\AmcMtpService\bin\Debug\AmcMtpService.exe
+D:\wyf\AmcMtpService\AmcMtpService\bin\Debug\AmcMtpService.pdb
+D:\wyf\AmcMtpService\AmcMtpService\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\wyf\AmcMtpService\AmcMtpService\obj\Debug\AmcMtpService.exe
+D:\wyf\AmcMtpService\AmcMtpService\obj\Debug\AmcMtpService.pdb

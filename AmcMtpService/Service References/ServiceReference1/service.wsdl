@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DeskTopService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/Message" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDeskTopService_EmergencyDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmergencyDetail" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_EmergencyDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmergencyDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_GetPlanList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanList" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_GetPlanList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlanListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_GetEquipMentCheckList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquipMentCheckList" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_GetEquipMentCheckList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquipMentCheckListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_UpLoadFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadFile" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_UpLoadFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpLoadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_GetProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProduct" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_GetProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_GetTZList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTZList" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_GetTZList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTZListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_GetEmergencyFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmergencyFile" />
+  </wsdl:message>
+  <wsdl:message name="IDeskTopService_GetEmergencyFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmergencyFileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDeskTopService">
+    <wsdl:operation name="EmergencyDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeskTopService/EmergencyDetail" message="tns:IDeskTopService_EmergencyDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeskTopService/EmergencyDetailResponse" message="tns:IDeskTopService_EmergencyDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeskTopService/GetPlanList" message="tns:IDeskTopService_GetPlanList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeskTopService/GetPlanListResponse" message="tns:IDeskTopService_GetPlanList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquipMentCheckList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeskTopService/GetEquipMentCheckList" message="tns:IDeskTopService_GetEquipMentCheckList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeskTopService/GetEquipMentCheckListResponse" message="tns:IDeskTopService_GetEquipMentCheckList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeskTopService/UpLoadFile" message="tns:IDeskTopService_UpLoadFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeskTopService/UpLoadFileResponse" message="tns:IDeskTopService_UpLoadFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeskTopService/GetProduct" message="tns:IDeskTopService_GetProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeskTopService/GetProductResponse" message="tns:IDeskTopService_GetProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTZList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeskTopService/GetTZList" message="tns:IDeskTopService_GetTZList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeskTopService/GetTZListResponse" message="tns:IDeskTopService_GetTZList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmergencyFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeskTopService/GetEmergencyFile" message="tns:IDeskTopService_GetEmergencyFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeskTopService/GetEmergencyFileResponse" message="tns:IDeskTopService_GetEmergencyFile_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDeskTopService" type="tns:IDeskTopService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EmergencyDetail">
+      <soap:operation soapAction="http://tempuri.org/IDeskTopService/EmergencyDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanList">
+      <soap:operation soapAction="http://tempuri.org/IDeskTopService/GetPlanList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquipMentCheckList">
+      <soap:operation soapAction="http://tempuri.org/IDeskTopService/GetEquipMentCheckList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadFile">
+      <soap:operation soapAction="http://tempuri.org/IDeskTopService/UpLoadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <soap:operation soapAction="http://tempuri.org/IDeskTopService/GetProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTZList">
+      <soap:operation soapAction="http://tempuri.org/IDeskTopService/GetTZList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmergencyFile">
+      <soap:operation soapAction="http://tempuri.org/IDeskTopService/GetEmergencyFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DeskTopService">
+    <wsdl:port name="BasicHttpBinding_IDeskTopService" binding="tns:BasicHttpBinding_IDeskTopService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/DeskTopWCF/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
